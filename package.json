@@ -1,0 +1,11 @@
+{
+  "name": "teste-serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "serverless": "^3.1.1",
+    "serverless-azure-functions": "^2.1.3"
+  }
+}

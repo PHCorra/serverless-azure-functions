@@ -1,0 +1,23 @@
+# serverless.yml
+service: testeServerless
+
+provider:
+  name: azure
+  region: Brazil South
+  runtime: nodejs14
+  subscriptionId:
+  stage: dev
+  timeout: 3
+
+plugins:
+  - serverless-azure-functions
+
+functions:
+  index:
+    handler: dir/index.handler
+    description: testing serverless
+    events:
+      - http: true
+        methods:
+          - get
+          - post
